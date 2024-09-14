@@ -1,17 +1,835 @@
 <!DOCTYPE html>
-<html>
-
-<body style="background-image: url(https://previews.123rf.com/images/dmitrydemidovich/dmitrydemidovich2212/dmitrydemidovich221200755/195728640-everything-begins-with-an-idea-symbol-concept-word-everything-begins-with-an-idea-on-wooden-blocks.jpg);">
-    <!-- background image -->
-   
-        <!-- go to 2nd page -->
-        <li>
-            <a href="myform1.html" Sign in>
-                <button
-                    style="color: blue; margin-top: 40px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; float: right; margin-right: 50px; font-size: 30px;">Sign-in</button>
-            </a>
-        </li>
+<html lang="en">
+<head>
     
+    <title>InsuranceHub </title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/Users/priyamahajan/Downloads/Insurance hub.amit/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/Users/priyamahajan/Downloads/Insurance hub.amit/assets/css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+   
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Favicon -->
+    
+    
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Insurance Hub</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#feature">Features</a></li>
+         
+          <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Health Insurance</a></li>
+              <li class="dropdown"><a href="#"><span>Vehicle Insurance</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  
+                  <li><a href="#">Two-Wheeler</a></li>
+                  <li><a href="#">Three-Wheeler</a></li>
+                  <li><a href="#">Four-Wheeler</a></li>
+                
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Types of Insurance</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  
+                  <li><a href="#">Comprensive Insurance</a></li>
+                  <li><a href="#">Third-Party Insurance</a></li>
+                  <li><a href="#">OwnDamage Insurance</a></li>
+                
+                </ul>
+              </li>
+
+
+              <li class="dropdown"><a href="#"><span>Types of Loan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  
+                  <li><a href="#">Home Loan</a></li>
+                  <li><a href="#">Mortgage Loan</a></li>
+                  <li><a href="#">Personal Loan</a></li>
+                
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Insurance Hub</span></h2>
+            <p class="animate__animated animate__fadeInUp">Real. Simple. Insurance.
+              At InsuranceHub, we’re all about making insurance easy. Whether it’s home, auto, transportation, or general business insurance, we see you and we've got your back. So let's get started - together..</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Insurance Wealth For everyone</h2>
+            <p class="animate__animated animate__fadeInUp">InsuranceHub is a technology-driven insurance agency that serves over 15,000 clients across the United States. Our goal is simple: make insurance easy. As a long-standing agency, we’ve developed strong relationships with some of the most respected insurance carriers in the industry.
+
+            </p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Life Insurance Makes You Happy</h2>
+            <p class="animate__animated animate__fadeInUp">You've worked hard to build your business. We are here to help protect your business and employees.
+
+              .</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+
+    <div class="container-fluid feature bg-light py-5">
+      <div class="container py-5">
+          <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+              <h4 class="text-primary">Our Features</h4>
+              <h1 class="display-4 mb-4">Insurance Provides You a Better Future</h1>
+              <p class="mb-0">
+                  We offer tailored insurance plans that secure your future with trusted services, flexible options, and round-the-clock support.
+              </p>
+          </div>
+          <div class="row g-4">
+              <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="feature-item p-4 pt-0 text-center">
+                      <div class="feature-icon p-4 mb-4">
+                          <i class="fas fa-handshake fa-3x text-primary"></i>
+                      </div>
+                      <h4 class="mb-4">Trusted Company</h4>
+                      <p class="mb-4">We have a long-standing reputation for reliability and customer satisfaction.</p>
+                      <a class="btn btn-primary rounded-pill py-2 px-4" href="#" style="background-color: #fd7e14;">Learn More</a>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="feature-item p-4 pt-0 text-center">
+                      <div class="feature-icon p-4 mb-4">
+                          <i class="fas fa-dollar-sign fa-3x text-primary"></i>
+                      </div>
+                      <h4 class="mb-4">Anytime Money Back</h4>
+                      <p class="mb-4">Flexible refund policies ensure you can access your money whenever needed.</p>
+                      <a class="btn btn-primary rounded-pill py-2 px-4" href="#" style="background-color: #fd7e14;" >Learn More</a>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="feature-item p-4 pt-0 text-center">
+                      <div class="feature-icon p-4 mb-4">
+                          <i class="fas fa-bullseye fa-3x text-primary"></i>
+                      </div>
+                      <h4 class="mb-4">Flexible Plans</h4>
+                      <p class="mb-4">Choose from a variety of plans that can be customized to fit your needs.</p>
+                      <a class="btn btn-primary rounded-pill py-2 px-4" href="#" style="background-color: #fd7e14;">Learn More</a>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                  <div class="feature-item p-4 pt-0 text-center">
+                      <div class="feature-icon p-4 mb-4">
+                        <img src="/Users/priyamahajan/Downloads/Selecao 2/assets/img/24:7 Background Removed.png" style="height: 5%; width: 10%; border-radius: 50%;">
+                      
+                      </div>
+                      <h4 class="mb-4">24/7 Fast Support</h4>
+                      <p class="mb-4">Our support team is available around the clock to assist you with any inquiries.</p>
+                      <a class="btn btn-primary rounded-pill py-2 px-4" href="#" style="background-color: #fd7e14;">Learn More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+
+  
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Amit Mahajan</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              InsuranceHub is a technology-driven insurance agency that serves over 15,000 clients across the United States. Our goal is simple: make insurance easy. As a long-standing agency, we’ve developed strong relationships with some of the most respected insurance carriers in the industry.
+
+
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>High Range of Exploring Protection</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>We can save your money.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Production or trading of good</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>InsuranceHub is a technology-driven insurance agency that serves over 15,000 clients across the United States. Our goal is simple: make insurance easy. As a long-standing agency, we’ve developed strong relationships with some of the most respected insurance carriers in the industry.
+
+            </p>
+            <a href="#" class="read-more"><span>Contact Me</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="feature" class="features section">
+
+      <div class="container">
+
+        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+          <!--  -->
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <i class="bi bi-box-seam"></i>
+              <h4 class="d-none d-lg-block">Money Back Gauranty</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <i class="bi bi-brightness-high"></i>
+              <h4 class="d-none d-lg-block">Risk management</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+              <i class="bi bi-command"></i>
+              <h4 class="d-none d-lg-block">Our life insurance is flexible</h4>
+            </a>
+          </li>
+        </ul><!-- End Tab Nav -->
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>About Our Company</h3>
+                <p class="fst-italic">
+                  InsuranceHub is a technology-driven insurance agency that serves over 15,000 clients across the United States. Our goal is simple: make insurance easy. As a long-standing agency, we’ve developed strong relationships with some of the most respected insurance carriers in the industry.
+
+
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i>
+                    <spab>Great coverage</spab>
+                  </li>
+                  <li><i class="bi bi-check2-all"></i> <span>Great insurance rates</span>.</li>
+                  <li><i class="bi bi-check2-all"></i> <span>Great customer service</span></li>
+                </ul>
+                <p> 
+It’s because of these relationships that we’re able to provide our own customers with transparent choices and competitive rates. When customers choose to work with InsuranceHub, they are not only selecting an agency but a partner that becomes a trusted advisor.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="/Users/priyamahajan/Downloads/Selecao 2/assets/amit.jpeg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/working-2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                </ul>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/working-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Call Me</h3>
+            <p>We're here, there, and everywhere for you. Our ultimate goal is customer satisfaction, which is why we've made it our driving mission to be accessible. We are where you want us to be. So go ahead, connect with us today..</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call Me</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>ALL TYPE OF INSURANCE</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/health_page.html" class="stretched-link">
+                <h3>HEALTH INSURANCE</h3>
+              </a>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/lifeinsurance.html" class="stretched-link">
+                <h3>LIFE INSURANCE</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-text" style="color: #20c997;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/vehicle.html" class="stretched-link">
+                <h3>VEHICLE INSURANCE</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/marineinsurance.html" class="stretched-link">
+                <h3>MARINE INSURANCE</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-globe" style="color: #6610f2;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/propertyinsurance.html" class="stretched-link">
+                <h3>PROPERTY INSURANCE</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-clock" style="color: #f3268c;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/homeinsurance.html" class="stretched-link">
+                <h3>HOME INSURANCE</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/shopinsurance.html" class="stretched-link">
+                <h3>SHOP INSURANCE</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-globe" style="color: #6610f2;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/fireinsurance.html" class="stretched-link">
+                <h3>FIRE INSURANCE</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-clock" style="color: #f3268c;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/mutualfund.html" class="stretched-link">
+                <h3>MUTUAL FUNDS</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
+              </div>
+              <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/creditcard.html" class="stretched-link">
+                <h3>CREDIT CARD</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-text" style="color: #20c997;"></i>
+                </div>
+                <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/vehicle.html" class="stretched-link">
+                  <h3>Persional Loan</h3>
+                </a>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+      <!-- loan title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p>ALL TYPE OF LOANS</p>
+       
+         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://assets-blog.syniverse.com/2023/04/01043605/professional-broker-2021-09-24-03-32-27-utc-1-1080x675.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Building a Brighter financial Future & Good Support.
+            </h2>
+            <p class="lead">The term loan refers to a type of credit vehicle in which a sum of money is lent to another party in exchange for future </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">APPLY FOR LOANS</button>
+             
+            </div>
+          </div>
+        </div>
+       
+      </div><!-- End Section Title -->
+      <!-- loan services Section -->
+  
+    
+    <section id="team" class="team section">
+      <!-- loan services -->
+      <section id="services" class="services section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>ALL TYPE OF Loans</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                <div class="icon">
+                  <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
+                </div>
+                <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/health_page.html" class="stretched-link">
+                  <h3>Home Loan</h3>
+                </a>
+                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+                </div>
+                <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/lifeinsurance.html" class="stretched-link">
+                  <h3>Mortgage Loan</h3>
+                </a>
+                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-text" style="color: #20c997;"></i>
+                </div>
+                <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/vehicle.html" class="stretched-link">
+                  <h3>Persional Loan</h3>
+                </a>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              </div>
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-text" style="color: #20c997;"></i>
+                </div>
+                <a href="/Users/priyamahajan/Downloads/Insurance hub.amit/vehicle.html" class="stretched-link">
+                  <h3>Other Loan</h3>
+                </a>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+  
+      
+    <!-- Recent Posts Section -->
+    <div class="container-fluid feature bg-light py-5">
+      <div class="container py-5">
+          <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+              <h4 class="text-primary">Insurance Type</h4>
+              <h1 class="display-4 mb-4">Insurance Provides You a Better Future</h1>
+              <p class="mb-0">
+                  We offer tailored insurance plans that secure your future with trusted services, flexible options, and round-the-clock support.
+              </p>
+          </div>
+          <div class="row g-4">
+              <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="feature-item p-4 pt-0 text-center">
+                      <div class="feature-icon p-4 mb-4">
+                          <i class="fas fa-handshake fa-3x text-primary"></i>
+                      </div>
+                      <h4 class="mb-4">Comprensive Insurance</h4>
+                      <p class="mb-4">We have a long-standing reputation for reliability and customer satisfaction.</p>
+                      <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="feature-item p-4 pt-0 text-center">
+                      <div class="feature-icon p-4 mb-4">
+                          <i class="fas fa-dollar-sign fa-3x text-primary"></i>
+                      </div>
+                      <h4 class="mb-4">Third-Party Insurance</h4>
+                      <p class="mb-4">Flexible refund policies ensure you can access your money whenever needed.</p>
+                      <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="feature-item p-4 pt-0 text-center">
+                      <div class="feature-icon p-4 mb-4">
+                          <i class="fas fa-bullseye fa-3x text-primary"></i>
+                      </div>
+                      <h4 class="mb-4">Zero Depretiation Insurance</h4>
+                      <p class="mb-4">Choose from a variety of plans that can be customized to fit your needs.</p>
+                      <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                  <div class="feature-item p-4 pt-0 text-center">
+                      <div class="feature-icon p-4 mb-4">
+                        <i class="fas fa-bullseye fa-3x text-primary"></i>
+                 </div>
+                      <h4 class="mb-4">Own Damage Insurance</h4>
+                      <p class="mb-4">Our support team is available around the clock to assist you with any inquiries.</p>
+                      <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+        
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Nagpur,India 440013.</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+9588615051</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>amitking@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Insurance Hub</h3>
+      
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">INSURANCE HUB</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">@2024</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
