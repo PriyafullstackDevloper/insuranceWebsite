@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+	<title>	Solar Calculator | Satyanam-Solar Energy </title>
+	
+	<!-- Favicon --> 
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+	<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	
+	<script src="js/jquery-ui.min.js"></script>
+	
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	
+	<!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+			
+	<!-- Main WP CSS -->
+	<link rel="stylesheet" href="style.css">
+	
+   </head>
+   
+   <body>
+	
+	<div class="topbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-10">
+					<a class="sec" href="/cdn-cgi/l/email-protection#dfb6b1b9b09fbeadb6b1bab1baadb8a6f1bcb0b2"><span class="__cf_email__" data-cfemail="4d24232b220d2c3f24232823283f2a34632e2220">satyanamsolar@gmail.com</span></a> 
+				</div>
+				<div class="col-2 alignright"></div>
+                    <i class="fa fa-phone"></i>
+                     <a class="white" href="tel:+91 8484046494">+91 8484046494</a>
+					
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<header>
+	
+		
+		<div class="row" style="background-color: aliceblue;">
+			<div class="container">
+		
+			<nav class="navbar navbar-expand-lg">
+			  <a class="navbar-brand logo" href="">			  
+				<img src="./assets/solarlogo Background Removed.png">
+			  </a>
+			  
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+				<!--<span class="navbar-toggler-icon"></span>-->
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+								
+					<ul id="menu-main-nav-menu" class="nav navbar-nav ml-auto">
+						<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-62 current_page_item menu-item-68"><a href="./index.html">Home</a></li>
+						<li><a href="./about.html">About Us</a></li>
+						<li><a href="./knowsolar.html">Know Solar</a></li>
+						<li><a href="./product.html">Products</a></li>
+						<li><a href="./contact.html">Contact Us</a></li>
+						<li><a href="./solarcalculation.html">Solar Calculator</a></li>
+					</ul>
+				
+			  </div>
+			</nav>
+			
+			</div>
+		</div>
+						
+		
+	</header>
+	
+	
+	
+	<main style="background:linear-gradient(rgba(255, 193, 7, 0.8), rgba(255, 193, 7, 0.8) ), url() no-repeat scroll 50% 50% transparent!important; background-size: cover!important;">
+	
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+
+<section class="secpad50 forms">
+	<div class="container">
+
+		<h2 class="sectitle">Solar <span class="white">Calculator</span>
+			<span class="smborder whitebg"></span>
+		</h2>
+
+
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="form-group">
+					<div class="input-group">
+						<select id="connectiontype" class="form-control" name="connectiontype">
+							<option>Select Connection Type</option>
+							<option>Residential</option>
+							<option>Commercial LT</option>
+							<option>Commercial HT</option>
+							<option>Hospitals/Schools/Community Hall/Colleges/Others</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<form name="calculate" id="calculate" method="POST" enctype="multipart/form-datam" style="display:none">
+			<div class="row justify-content-center">
+
+
+				<input type="hidden" id="contype" class="form-control" name="contype" placeholder="Connection Type">
+
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="">Pincode</label>
+						<div class="input-group">
+							<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-marker"></i></span></div>
+							<input name="pincode" id="pincode" class="form-control" placeholder="Pincode of site" data-validation="server" data-validation-url="/checkpincode.php" onkeydown="this.value=removeSpaces(this.value);" maxlength="6">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="">Select Area</label>
+						<div class="input-group">
+							<select id="area" class="form-control" name="area">
+								<option>Enter pincode first</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="">Select Connection Type</label>
+						<div class="input-group">
+							<select class="form-control" name="phase">
+								<option value="single">Single Phase</option>
+								<option value="three">Three Phase</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="">System Capacity</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="sanload" placeholder="System Capacity" data-validation="required number" data-validation-allowing="range[1;100],float" data-validation-error-msg="Value should be digit & between 1 to 100">
+							<div class="input-group-append"><span class="input-group-text">KW</span></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="">Average Monthly Units</label>
+						<div class="input-group">
+							<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-tachometer"></i></span></div>
+							<input type="text" class="form-control" name="units" placeholder="Average Monthly Units" data-validation="required length custom" data-validation-length="min1" data-validation-regexp="^([0-9]+)$">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="">Roof Area</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="roofarea" placeholder="Roof Area" data-validation="required length custom" data-validation-length="min1" data-validation-regexp="^([0-9]+)$">
+							<div class="input-group-append"><span class="input-group-text">Sq. Ft.</span></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 aligncenter">
+					<div class="form-group">
+
+						<button data-loading-text="<i class='fa fa-spinner fa-spin'></i> Calculating..." class="btn btn-success" type="submit" name="submit" value="Calculate" style="width:100%; max-width:300px; margin: 20px 0;">Calculate</button>
+
+					</div>
+				</div>
+
+			</div>
+		</form>
+
+
+
+		<form name="contact1" id="contact1" method="POST" enctype="multipart/form-datam" style="display:none">
+			<div class="row justify-content-center">
+
+				<div class="col-md-6">
+
+
+					<div class="form-group">
+						<label for=""></label>
+						<input name="name" class="form-control" placeholder="Name" data-validation="required">
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<div class="input-group">
+							<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div>
+							<input name="contact" class="form-control" placeholder="Contact Number" data-validation="number">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<div class="input-group">
+							<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope"></i></span></div>
+							<input name="email" class="form-control" placeholder="Email" data-validation="email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<div class="input-group">
+							<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-marker"></i></span></div>
+							<input name="address" class="form-control" placeholder="Address" data-validation="required">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<input name="avgbill" class="form-control" placeholder="Average Monthly Bill" data-validation="required">
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<input name="rooftop" class="form-control" placeholder="Available Rooftop Area" data-validation="required">
+					</div>
+
+					<div class="col-md-12 aligncenter">
+						<div class="form-group">
+
+							<button data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..." class="btn btn-success" type="submit" name="submit" value="Calculate" style="width:100%; max-width:300px; margin: 20px 0;">Send Enquiry</button>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</form>
+
+		<form name="contact2" id="contact2" method="POST" enctype="multipart/form-datam" style="display:none">
+			<div class="row justify-content-center">
+
+				<div class="col-md-6">
+
+					<div class="form-group">
+
+						<label for="">Select Category</label>
+
+						<select class="form-control" name="fcategory" id="fcategory">
+							<option>Hospital</option>
+							<option>Community Hall</option>
+							<option>School or College</option>
+							<option>Other</option>
+						</select>
+
+					</div>
+
+					<div class="form-group" id="specify" style="display:none">
+						<label for="">Please specify</label>
+						<input name="specify" class="form-control" placeholder="Please Specify">
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<input name="name" class="form-control" placeholder="Name" data-validation="required">
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<div class="input-group">
+							<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div>
+							<input name="contact" class="form-control" placeholder="Contact Number" data-validation="number">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<div class="input-group">
+							<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope"></i></span></div>
+							<input name="email" class="form-control" placeholder="Email" data-validation="email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<div class="input-group">
+							<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-marker"></i></span></div>
+							<input name="address" class="form-control" placeholder="Address" data-validation="required">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<input name="avgbill" class="form-control" placeholder="Average Monthly Bill" data-validation="required">
+					</div>
+
+					<div class="form-group">
+						<label for=""></label>
+						<input name="rooftop" class="form-control" placeholder="Available Rooftop Area" data-validation="required">
+					</div>
+
+					<div class="col-md-12 aligncenter">
+						<div class="form-group">
+
+							<button data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..." class="btn btn-success" type="submit" name="submit" value="Calculate" style="width:100%; max-width:300px; margin: 20px 0;">Send Enquiry</button>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</form>
+
+
+
+	</div>
+</section>
+
+<section class="secpad30" id="results" style="display:none;">
+	<div class="container">
+		<h2 class="sectitle">Your <span class="white">Estimated Savings!</span>
+			<span class="smborder whitebg"></span>
+		</h2>
+		<div class="estimate">
+
+
+
+		</div>
+	</div>
+</section>
+
+<script>
+	$(function() {
+		$("#pincode").keyup(function() {
+			if (this.value.length == this.maxLength) {
+				document.getElementById('area').focus();
+
+				var length = $('#area').length;
+
+				$("#area").attr('size', length);
+
+			}
+		});
+	});
+</script>
+
+<script>
+	$('#connectiontype').on('change', function() {
+		var ct = this.value;
+
+		if (ct == "Residential") {
+
+			$('#calculate')[0].reset();
+			$("#area").html("<option>Enter pincode first</option>");
+
+			$("#contype").val("Residential");
+
+			$("#calculate").css("display", "block");
+			$("#contact1").css("display", "none");
+			$("#contact2").css("display", "none");
+			$("#results").css("display", "none");
+
+		} else if (ct == "Commercial LT") {
+
+			$('#calculate')[0].reset();
+			$("#area").html("<option>Enter pincode first</option>");
+
+			$("#contype").val("Commercial");
+
+			$("#calculate").css("display", "block");
+			$("#contact1").css("display", "none");
+			$("#contact2").css("display", "none");
+			$("#results").css("display", "none");
+
+		} else if (ct == "Commercial HT") {
+
+			$("#contact1").css("display", "block");
+			$("#contact2").css("display", "none");
+			$("#calculate").css("display", "none");
+			$("#results").css("display", "none");
+
+		} else if (ct == "Hospitals/Schools/Community Hall/Colleges/Others") {
+
+			$("#contact1").css("display", "none");
+			$("#contact2").css("display", "block");
+			$("#calculate").css("display", "none");
+			$("#results").css("display", "none");
+
+		} else {
+
+			$("#contact1").css("display", "none");
+			$("#contact2").css("display", "none");
+			$("#calculate").css("display", "none");
+			$("#results").css("display", "none");
+
+		}
+
+	})
+</script>
+
+<script>
+	$('#fcategory').on('change', function() {
+
+		var sp = this.value;
+
+		if (sp == "Other") {
+
+			$("#specify").css("display", "block");
+
+		} else {
+
+			$("#specify").css("display", "none");
+
+		}
+
+	});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+<script>
+	$.validate({
+		lang: 'en',
+		addValidClassOnAll: true,
+		modules: 'toggleDisabled',
+		disabledFormFilter: 'form.toggle-disabled',
+		scrollToTopOnError: false,
+		modules: 'sanitize',
+		modules: 'security',
+	});
+</script>
+
+<script>
+	$('#pincode').on('validation', function(evt, valid) {
+		var status = (valid ? 'VALID' : 'NOT VALID');
+		var pincode = $('#pincode').val();
+
+		if (status == 'VALID') {
+			$.ajax({
+				beforeSend: function() {
+					$('#area').disabled = true;
+					//$("#area").css({"border": "1px solid #28a745"});
+				},
+				url: 'getarea.php',
+				method: 'POST',
+				data: {
+					'pincode': pincode
+				},
+				success: function(mwddata) {
+					$('#area').html(mwddata);
+				},
+				error: function(data) {
+					$('#area').html("Ajax Error");
+				},
+			}).done(function(data) {
+				$('#area').disabled = false;
+				//$("#area").css({"border": "1px solid #28a745"});
+			});
+		} else {
+			$('#area').html('<option>Enter pincode first</option>');
+		}
+	});
+</script>
+
+<script>
+	$(function() {
+		$('#calculate').on('submit', function(e) {
+
+			var form_data = new FormData(document.getElementById("calculate"));
+
+			form_data.append("label", "WEBUPLOAD");
+
+			$.ajax({
+
+				beforeSend: function() {
+
+				},
+
+				url: "calculate.php",
+				type: "POST",
+				data: form_data,
+				processData: false,
+				contentType: false,
+				//dataType:"json",
+				success: function(data) {
+					//$("#"+data["tf"]).append(data["task"]);
+					$('.estimate').html(data);
+				}
+
+			}).done(function(data) {
+
+				var topbarh = $(".topbar").outerHeight();
+				var headerh = $("header").outerHeight();
+
+				var totalh = topbarh + headerh;
+
+				$("#results").css({
+					"display": "inline-block"
+				});
+
+				$('html, body').animate({
+					scrollTop: $("#results").offset().top - totalh
+				}, 2000);
+
+			});
+			return false;
+
+
+		});
+
+	});
+</script>
+
+<script>
+	$(function() {
+		$('#contact1').on('submit', function(e) {
+
+			var form_data = new FormData(document.getElementById("contact1"));
+
+			form_data.append("label", "WEBUPLOAD");
+
+			$.ajax({
+
+				beforeSend: function() {
+
+				},
+
+				url: "mail.php",
+				type: "POST",
+				data: form_data,
+				processData: false,
+				contentType: false,
+				//dataType:"json",
+				success: function(data) {
+					$('.forms').html(data);
+				}
+
+			}).done(function(data) {
+
+
+			});
+			return false;
+
+
+		});
+
+	});
+</script>
+
+<script>
+	$(function() {
+		$('#contact2').on('submit', function(e) {
+
+			var form_data = new FormData(document.getElementById("contact2"));
+
+			form_data.append("label", "WEBUPLOAD");
+
+			$.ajax({
+
+				beforeSend: function() {
+
+				},
+
+				url: "mail.php",
+				type: "POST",
+				data: form_data,
+				processData: false,
+				contentType: false,
+				//dataType:"json",
+				success: function(data) {
+					$('.forms').html(data);
+				}
+
+			}).done(function(data) {
+
+
+			});
+			return false;
+
+
+		});
+
+	});
+</script>
+
+<script language="javascript" type="text/javascript">
+	function removeSpaces(string) {
+		return string.split(' ').join('');
+	}
+</script>
+
+</main>
+
+<section class="secpad30 footeraddress" style="background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://abups.letsgetnew.com/wp-content/uploads/2018/01/Contact-page-background-image.jpg) no-repeat scroll 0 0 transparent;
+    background-size: cover;">
+
+	<h1>Satyanam-Solar Energy</h1>
+
+    <p>Beside Indane Gas Office, <br> Chhindawada Road Saoner, Nagpur, 441107, Maharashtra.</p>
+
+
+	<h3>
+		<i class="fa fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#cfa6a1a9a08faebda6a1aaa1aabda8b6e1aca0a2"><span class="__cf_email__" data-cfemail="abc2c5cdc4ebcad9c2c5cec5ced9ccd285c8c4c6">[satyanamsolar@gmail.com]</span></a><br><i class="fa fa-phone"></i>  +91 8484046484 <br/>
+
+	</h3>
+
+	<ul class="social">
+		<a href="https://www.facebook.com/profile.php?id=61556256187804&mibextid=LQQJ4d" target="_blank">
+			<li><i class="fa fa-facebook"></i></li>
+		</a>
+		<a href="" target="_blank">
+			<li><i class="fa fa-twitter"></i></li>
+		</a>
+		<a href="https://www.instagram.com/satyanamsolar?igsh=MXR0aTV3ODRkOXliOA%3D%3D&utm_source=qr" target="_blank">
+			<li><i class="fa fa-instagram"></i></li>
+		</a>
+		<a href="" target="_blank">
+			<li><i class="fa fa-linkedin"></i></li>
+		</a>
+		<a href="" target="_blank">
+			<li><i class="fa fa-youtube"></i></li>
+		</a>
+	</ul>
+
+</section>
+
+<footer>
+	<div class="container">
+		© Copyright 2024 - Satyanam-Solar Energy. All rights reserved
+	</div>
+</footer>
+
+
+
+<!-- Scripts -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

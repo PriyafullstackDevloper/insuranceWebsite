@@ -1,0 +1,46 @@
+.topbar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.email-link, .faqs-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.phone-link {
+    color: yellow; /* Phone number color */
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.email-link:hover, .faqs-link:hover, .phone-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .topbar .col-10, .topbar .col-2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+.mainslider .slide {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.mainslider .slidecontent {
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+.mainslider .slidecontent h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.mainslider .slidecontent p {
+    font-size: 18px;
+}
